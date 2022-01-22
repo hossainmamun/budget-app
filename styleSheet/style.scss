@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  background-color: rgb(3, 16, 39);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+  text-transform: capitalize;
+}
+
+.container {
+  // border: 2px solid #fff;
+  width: 800px;
+  margin: 0 auto;
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
+  //   align-items: center;
+
+  .input-interface {
+    margin-right: 50px;
+  }
+
+  .budget-part {
+    margin: 0 0 30px 0;
+  }
+
+  .balance-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .inner-display {
+      margin: 0 30px;
+      text-align: center;
+    }
+
+    //! inner tag of dynamic display
+    span {
+      text-transform: capitalize;
+      font-weight: 500;
+      margin: 10px 0;
+      display: block;
+      font-size: 20px;
+      color: #fff;
+    }
+    i {
+      font-size: 40px;
+      color: #fff;
+      display: block;
+      margin: 0 0 10px;
+    }
+    h4 {
+      font-size: 26px;
+      color: #fff;
+    }
+  }
+
+  //! input part
+  label {
+    display: block;
+    text-transform: capitalize;
+    margin: 5px 0 8px;
+    font-weight: 700;
+    color: #fff;
+  }
+  input {
+    display: block;
+    border: 1px solid olivedrab;
+    padding: 10px;
+    margin: 5px 0 8px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  button {
+    padding: 10px 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: block;
+    margin: 5px 0 8px;
+    background-color: springgreen;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+  }
+  #expense-btn{
+    background-color: yellowgreen;
+  }
+}
